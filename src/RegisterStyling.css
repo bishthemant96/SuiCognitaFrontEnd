@@ -1,0 +1,98 @@
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	background-position:center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+* {
+	box-sizing: border-box;
+	outline-color: white;
+}
+
+.RegistrationContainer {
+	padding: 5px;
+	color: white;
+	width: 50%;
+	float: left;
+	margin-left:8%;
+	margin-top: 2%;
+	margin-bottom: 10%;
+  height: 800px;
+}
+
+input[type="text"]{
+	width: 100%;
+	padding: 10px;
+	margin: 5px 0 10px 0;
+	border: none;
+	background-color: #f1f1f1;
+}
+
+input[type="password"]{
+	width: 100%;
+	padding: 10px;
+	margin: 5px 0 10px 0;
+	border: none;
+	background-color: #f1f1f1;
+}
+
+input[name="Age"]{
+	width: 100%;
+	padding: 10px;
+	border: none;
+	background-color: #f1f1f1;
+	float: left;
+	margin: 5px 0 10px 0;
+}
+
+input[name="Zipcode"]{
+	width: 100%;
+	padding: 10px;
+	margin: 5px 0 10px 0;
+	border: none;
+	background-color: #f1f1f1;
+	margin-bottom: 15px;
+	margin-right: 25%;
+}
+
+.dropdown{
+	float: left;
+	margin-right: 26%;
+}
+
+
+input[type="text"]:focus, input[type="password"]:focus{
+	background-color: #ddd;
+	outline: none;
+}
+
+hr{
+	margin-bottom: 10px;
+	border: 0.6px solid #861818;
+}
+
+.registrationbtn{
+	background-color:  #861818;
+	color: white;
+	padding: 10px 10px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	opacity: 0.9;
+	width: 100%;
+}
+
+.registrationbtn:hover {
+	opacity: 3;
+}
+
+.SigninContainer {
+	text-align: center;
+}
+
+a{
+	color: dodgerblue;
+}

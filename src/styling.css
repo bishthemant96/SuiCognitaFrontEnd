@@ -1,0 +1,369 @@
+
+body {
+	background: #212F3C;
+	color: white;
+	font-family: Verdana, sans-serif;
+	background-image: url("./img/bg16.jpg");
+	background-size: cover;
+	position: fixed;
+}
+
+body p{
+	margin: 5px 65px;
+}
+
+h2{
+	color: white;
+}
+
+h4{
+	text-align: center;
+}
+
+
+.SCLOGO img{
+    position: absolute;
+		width: 70%;
+		height: 20%;
+		margin-top: 150%;
+}
+
+.SCLOGO a img:hover{
+        transform: scale(0.89) rotateX(15deg) rotateY(-25deg) rotateZ(3deg);
+        transition: 0.7s;
+        overflow: hidden;
+}
+
+.sidebar {
+  height: 100%;
+  width: 180px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper{
+	display: inline-block;
+	background-color: white;
+	padding: 20px;
+	margin-left: 14%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	width: 85%;
+}
+
+/* Left side container*/
+.gridContainer1{
+	display: grid;
+	grid-template-columns: 100% 1%;
+	grid-column-gap: 1em;
+	grid-row-gap: 1em;
+	width: 48%;
+	float: right;
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Right side container*/
+.gridContainer2{
+	display: grid;
+	grid-template-columns: 100% 1%;
+	grid-column-gap: 1em;
+	grid-row-gap: 1em;
+	width: 48%;
+	float: left;
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+  background-color: black;
+  color: white;
+}
+
+/* Left Slides - gridContainer1*/
+.mySlides{
+  display: none;
+  padding: 50px;
+  text-align: center;
+}
+
+.mySlides2 {
+  display: none;
+  padding: 50px;
+  text-align: center;
+}
+
+/* Right Slides - gridContainer2*/
+.mySlides3{
+  display: none;
+  padding: 50px;
+  text-align: center;
+}
+
+.mySlides4{
+  display: none;
+  padding: 50px;
+  text-align: center;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 2px;
+    background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 5px;
+  width: 5px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 100%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot2 {
+  cursor: pointer;
+  height: 5px;
+  width: 5px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 100%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot3 {
+  cursor: pointer;
+  height: 5px;
+  width: 5px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 100%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot4{
+  cursor: pointer;
+  height: 5px;
+  width: 5px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 100%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 35%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 1px 1px 0;
+  user-select: none;
+	background-color: rgba(0,0,0,0.8);
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+
+
+#footer_copyright_text{
+text-align: center;
+color: #262625;
+margin-bottom: 15px;
+}
+
+#footer_icons{
+	margin-top: 30%;
+ 	margin-left: 80%;
+}
+
+.fa {
+  padding: 5px;
+  font-size: 40px;
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover{
+    opacity: 0.9;
+    transform: scale(1.5);
+    transition: 0.1s;
+    background-color: #861818;
+    transform: scale(0.89) rotateX(360deg) rotateY(-15deg);
+    transition: 0.80s;
+}
+
+.fa-facebook{
+  background: black;
+  color: white;
+}
+
+.fa-twitter{
+  background: black;
+  color: white;
+}
+
+.fa-instagram{
+  background: black;
+  color: white;
+}
+
+
+#StudentProfile_Text {
+	text-align: right;
+	padding: 5px;
+  color: white;
+	width: 67%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
+}
+
+
+.card1{
+	display: inline;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	width: 350px;
+  text-align: center;
+  font-family: arial;
+  float: left;
+  margin-left: 20%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 3px;
+	color: white;
+}
+
+.card1 a{
+		  color: white;
+  		font-weight: bold;
+      text-decoration: none;
+}
+
+.card1 a:hover{
+		  color: white;
+  		font-weight: bold;
+      text-decoration: none;
+}
+
+.card1 img{
+      padding: 28px;
+}
+
+a{
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+}
+
+
+.Footer_Info ul{
+	top: 0;
+	padding: 0px;
+	margin: 0px;
+	list-style-type: none;
+	width: 100%;
+	overflow: hidden;
+  margin-left: 34%;
+}
+
+.Footer_Info li a{
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 18px 18px;
+	font-size: 13px;
+	margin-top: 10%;
+}
+
+.Footer_Info li a:hover{
+  text-decoration: none;
+	text-align: center;
+}
+
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 18px;
+  background-color: black;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  background-color: #861818;
+  color: wh;
+}
+
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}

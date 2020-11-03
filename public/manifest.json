@@ -1,0 +1,8 @@
+{
+  "short_name": "Sui Cognita",
+  "name": "Sui Cognita: The Recommendation Engine",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

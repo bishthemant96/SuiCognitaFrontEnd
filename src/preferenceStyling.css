@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: black;
+  padding: 20px;
+  font-family: Arial;
+  color: white;
+}
+
+.logo a img{
+      width: 25%;
+      height: auto;
+      margin-left: 10px;
+      position: relative;
+}
+
+.logo a img:hover{
+        transform: scale(0.89) rotateX(15deg) rotateY(-25deg) rotateZ(3deg);
+        transition: 0.7s;
+        overflow: hidden;
+}
+
+hr{
+    margin-bottom: 10px;
+    border: 0.4px solid #861818;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.gallery{
+  margin: 25px 90px;
+}
+
+.gallery img{
+  width: 150px;
+  padding: 15px;
+  transition: 0.8s;
+  filter: grayscale(0);
+}
+
+.gallery img:hover{
+  transform: scale(1.0);
+  filter: grayscale(100%);
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 2px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 24%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  padding: 16%;
+  background-color: black;
+  width: 250px;
+  height: auto;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  width: 70%;
+  border: none;
+  outline: none;
+  padding: 15px 30px;
+  background-color: white;
+  cursor: pointer;
+  margin-bottom: 10%;
+  margin: 10px -250px 50px;
+  font-size: 15px;
+}
+
+input[type="button"].btn:hover {
+  opacity: 0.9;
+  background-color: #861818;
+  color: white;
+}
+
+
+input[type="button"].btn.active {
+  background-color: #666;
+  color: white;
+}
+
+#footer_copyright_text{
+text-align: center;
+color: #262625;
+margin-bottom: 15px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+}
+
+input[type="checkbox"][id^="cb"] {
+  display: none;
+}
+
+label{
+  
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+
+label:before {
+  background-color: white;
+  color: white;
+  content: " ";
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 28px;
+  transition-duration: 0.3s;
+  transform: scale(0);
+}
+
+
+:checked + label:before {
+  content: "✔";
+  background-color: grey;
+  transform: scale(0.6);
+}
+
+:checked + label img {
+  transform: scale(1.1);
+  filter: grayscale(100%);
+}
